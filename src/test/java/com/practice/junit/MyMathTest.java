@@ -9,15 +9,14 @@ import static org.junit.jupiter.api.Assertions.fail;
 public class MyMathTest {
 
     @Test
-    public void addTest(){
+    public void addTest_ThreeMemberArray(){
         MyMath math = new MyMath();
-        int[] numbers = {1,2,3};
+        assertEquals(6, math.add(new int[]{1,2,3}));
+    }
 
-        int actual = math.add(numbers);
-        int expected = 5;
-
-        assertEquals(actual, expected);
-
-
+    @Test
+    public void addTest_ZeroLengthArray(){
+        MyMath math = new MyMath();
+        assertEquals(0, math.add(new int[]{})); //sum = 0
     }
 }
