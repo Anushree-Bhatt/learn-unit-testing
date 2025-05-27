@@ -1,10 +1,14 @@
-package com.practice.mockito.service;
+package com.practice.mockito;
 
 import com.practice.mockito.repo.DataService;
 
 public class BusinessImpl {
 
     private DataService dataService;
+
+    public BusinessImpl(DataService dataService) {
+        this.dataService = dataService;
+    }
 
     public int findGreatest(){
         int[] arr = dataService.retreiveAllData();
