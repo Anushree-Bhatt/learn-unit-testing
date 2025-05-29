@@ -14,7 +14,7 @@ public class BusinessImplTest {
         BusinessImpl service = new BusinessImpl(stub1);
         int res = service.findGreatest();
 
-        assertEquals(63, res);
+        assertEquals(67, res);
 
     }
 }
@@ -25,4 +25,10 @@ class DataServiceImpl_stub1 implements DataService {
     public int[] retreiveAllData() {
         return new int[]{24,67,25};
     }
+
+    @Override
+    public void nothing() {
+
+    }
+
 }
