@@ -55,9 +55,4 @@ public class ListTest_mocks {
         assertEquals("Any time!", mocked_list.get(1));
     }
 
-
-
-
-
-
 }
