@@ -8,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 
-public class BusinessImplTest_mocks {
+public class BusinessImplTest_mocks1 {
 
     @Test
     void test1_findGreatest(){
